@@ -1,0 +1,4 @@
+/snap/clion/114/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/clang++-9 -G "CodeBlocks - Unix Makefiles" /home/abodi/CLionProjects/itertools-cfar-a
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug
