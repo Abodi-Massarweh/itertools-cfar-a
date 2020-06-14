@@ -6,14 +6,16 @@
 #define ITERTOOLS_CFAR_A_RANGE_HPP
 
 namespace itertools {
+
     class range {
-        int* head;
+        int m_first;
+        int m_last;
     public:
         class iterator
         {
         public:
-            int* m_ptr;
-            iterator(int* iptr):m_ptr(iptr){}
+            int m_ptr;
+            iterator(const int& val):m_ptr(val){}
             iterator& operator++()
             {
                 this->m_ptr=m_ptr+1;
@@ -21,18 +23,21 @@ namespace itertools {
             }
             bool operator!=(const iterator& itr)
             {
-                return *(this->m_ptr)!=*(itr.m_ptr);
+                return (this->m_ptr)!=(itr.m_ptr);
+            }
+            bool operator ==(const iterator& itr) {
+                return (m_ptr == itr.m_ptr);
             }
             int operator*()
             {
-                return *(this->m_ptr);
+                return (this->m_ptr);
             }
         };
-        range(int x,int y){}
-        range::iterator end(){return iterator(this->head);}
+        range(int first,int last):m_first(first),m_last(last){}
+        range::iterator end(){return iterator(this->m_first);}
         range::iterator begin()
         {
-            return iterator(this->head);
+            return iterator(this->m_last);
         }
 
     private:
