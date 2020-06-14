@@ -13,11 +13,11 @@ namespace itertools {
         T operator()(T a,T b){
             return  a+b;
         }
-                operation(){this->operator()();}
     };
     template <class M,class F=itertools::operation<M>>
     class accumulate {
     public:
+
 
         class iterator
         {
@@ -39,7 +39,7 @@ namespace itertools {
 
         iterator begin(){return this->m_container.begin();}
         iterator end(){return this->m_container.end();}
-
+        accumulate(const range& rng):m_container(){}
     private:
         M m_container;
         F m_function;

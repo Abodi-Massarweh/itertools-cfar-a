@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/abodi/CLionProjects/itertools-cfar-a/Demo.cpp
+iostream
+-
+vector
+-
+range.hpp
+/home/abodi/CLionProjects/itertools-cfar-a/range.hpp
+accumulate.hpp
+/home/abodi/CLionProjects/itertools-cfar-a/accumulate.hpp
+filterfalse.hpp
+/home/abodi/CLionProjects/itertools-cfar-a/filterfalse.hpp
+compress.hpp
+/home/abodi/CLionProjects/itertools-cfar-a/compress.hpp
+
+/home/abodi/CLionProjects/itertools-cfar-a/accumulate.hpp
+
+/home/abodi/CLionProjects/itertools-cfar-a/compress.hpp
+
+/home/abodi/CLionProjects/itertools-cfar-a/filterfalse.hpp
+
+/home/abodi/CLionProjects/itertools-cfar-a/range.hpp
+

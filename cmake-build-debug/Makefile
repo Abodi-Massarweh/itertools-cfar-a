@@ -150,114 +150,6 @@ Demo.cpp.s:
 	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/Demo.cpp.s
 .PHONY : Demo.cpp.s
 
-accumulate.o: accumulate.cpp.o
-
-.PHONY : accumulate.o
-
-# target to build an object file
-accumulate.cpp.o:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o
-.PHONY : accumulate.cpp.o
-
-accumulate.i: accumulate.cpp.i
-
-.PHONY : accumulate.i
-
-# target to preprocess a source file
-accumulate.cpp.i:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.i
-.PHONY : accumulate.cpp.i
-
-accumulate.s: accumulate.cpp.s
-
-.PHONY : accumulate.s
-
-# target to generate assembly for a file
-accumulate.cpp.s:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.s
-.PHONY : accumulate.cpp.s
-
-compress.o: compress.cpp.o
-
-.PHONY : compress.o
-
-# target to build an object file
-compress.cpp.o:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/compress.cpp.o
-.PHONY : compress.cpp.o
-
-compress.i: compress.cpp.i
-
-.PHONY : compress.i
-
-# target to preprocess a source file
-compress.cpp.i:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/compress.cpp.i
-.PHONY : compress.cpp.i
-
-compress.s: compress.cpp.s
-
-.PHONY : compress.s
-
-# target to generate assembly for a file
-compress.cpp.s:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/compress.cpp.s
-.PHONY : compress.cpp.s
-
-filterfalse.o: filterfalse.cpp.o
-
-.PHONY : filterfalse.o
-
-# target to build an object file
-filterfalse.cpp.o:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o
-.PHONY : filterfalse.cpp.o
-
-filterfalse.i: filterfalse.cpp.i
-
-.PHONY : filterfalse.i
-
-# target to preprocess a source file
-filterfalse.cpp.i:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.i
-.PHONY : filterfalse.cpp.i
-
-filterfalse.s: filterfalse.cpp.s
-
-.PHONY : filterfalse.s
-
-# target to generate assembly for a file
-filterfalse.cpp.s:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.s
-.PHONY : filterfalse.cpp.s
-
-range.o: range.cpp.o
-
-.PHONY : range.o
-
-# target to build an object file
-range.cpp.o:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/range.cpp.o
-.PHONY : range.cpp.o
-
-range.i: range.cpp.i
-
-.PHONY : range.i
-
-# target to preprocess a source file
-range.cpp.i:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/range.cpp.i
-.PHONY : range.cpp.i
-
-range.s: range.cpp.s
-
-.PHONY : range.s
-
-# target to generate assembly for a file
-range.cpp.s:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/range.cpp.s
-.PHONY : range.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -270,18 +162,6 @@ help:
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
-	@echo "... accumulate.o"
-	@echo "... accumulate.i"
-	@echo "... accumulate.s"
-	@echo "... compress.o"
-	@echo "... compress.i"
-	@echo "... compress.s"
-	@echo "... filterfalse.o"
-	@echo "... filterfalse.i"
-	@echo "... filterfalse.s"
-	@echo "... range.o"
-	@echo "... range.i"
-	@echo "... range.s"
 .PHONY : help
 
 
