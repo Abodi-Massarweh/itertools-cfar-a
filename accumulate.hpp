@@ -35,13 +35,13 @@ namespace itertools {
             typename CONT::iterator current;
             TYPE sum;
             FUNC m_functor;
-            iterator(const typename CONT::iterator& it,FUNC other_functor):current(it),m_functor(other_functor),sum(*current){}
+             iterator(const typename CONT::iterator& it,FUNC other_functor):current(it),m_functor(other_functor),sum(*current){}
             //iterator(const typename CONT::iterator& it):current(it),m_functor(it.m_functor),sum(*current){}
             TYPE operator*()
             {
                 return this->sum;
             }
-            iterator operator++()
+            iterator& operator++()
             {
                 ++current; ///legal
                 //sum+=*current; //old
