@@ -4,48 +4,67 @@
 
 #ifndef ITERTOOLS_CFAR_A_ACCUMULATE_HPP
 #define ITERTOOLS_CFAR_A_ACCUMULATE_HPP
-
+#include "range.hpp"
 namespace itertools {
-    template <typename T>
-    struct operation
-            {
+
+    struct operation {
     public:
-        T operator()(T a,T b){
-            return  a+b;
+        template<typename T>
+         T operator()(T a, T b) {
+            return a + b;
         }
     };
-    template <class M,class F=itertools::operation<M>>
-    class accumulate {
-    public:
 
+    template<typename CONT, class FUNC,class TYPE>
+    class Accumulate {
+    public:
+        CONT m_container;
+        FUNC m_function;
+    public:
+        class iterator;
+        iterator begin() { return iterator(this->m_container.begin(),m_function); }
+        iterator end() { return iterator(this->m_container.end(),m_function); }
+        Accumulate(const CONT &container, FUNC functor) : m_container(container), m_function(functor) {}
+        Accumulate(const range container) : m_container(container), m_function(FUNC()) {}
+        CONT& get_container(){return m_container;}
+        FUNC& get_function(){return m_function;}
 
         class iterator
         {
         public:
-            iterator(typename M::iterator first, typename M::iterator last,typename F::operation operation):m_first(first),m_last(last),m_operation(operation),m_current_sum(*first){}
-            iterator(const iterator& itr){}
-            M& operator*()
+            typename CONT::iterator current;
+            TYPE sum;
+            FUNC m_functor;
+            iterator(const typename CONT::iterator& it,FUNC other_functor):current(it),m_functor(other_functor),sum(*current){}
+            //iterator(const typename CONT::iterator& it):current(it),m_functor(it.m_functor),sum(*current){}
+            TYPE operator*()
             {
-                return m_current_sum;
+                return this->sum;
             }
-            iterator& operator++(){return *this;}
+            iterator operator++()
+            {
+                ++current; ///legal
+                //sum+=*current; //old
+                sum=m_functor(sum,*current);
+                return *this;
+            }
+            bool operator !=(const iterator& other){return current!=other.current; }
 
-        private:
-           typename M::iterator m_first;
-            typename M::iterator m_last;
-            typename F::operation m_operation;
-            M m_current_sum;
+
         };
 
-        iterator begin(){return this->m_container.begin();}
-        iterator end(){return this->m_container.end();}
-        accumulate(const range& rng):m_container(){}
-    private:
-        M m_container;
-        F m_function;
 
 
     };
+
+    template<typename CONT,typename FUNC=operation>
+    auto accumulate(CONT container,FUNC func=operation())
+    {
+
+        return Accumulate<CONT,FUNC,decltype(*(container.begin()))>(container,func);
+    }
 }
+//using namespace itertools;
+
 
 #endif //ITERTOOLS_CFAR_A_ACCUMULATE_HPP

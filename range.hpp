@@ -10,6 +10,7 @@ namespace itertools {
     class range {
 
     public:
+
         class iterator
         {
         public:
@@ -33,12 +34,13 @@ namespace itertools {
             }
         };
         range(int first,int last):m_first(first),m_last(last){}
-        range::iterator end(){return iterator(this->m_last);}
-        range::iterator begin()
+        iterator end(){return iterator(this->m_last);}
+        iterator begin()
         {
             return iterator(this->m_first);
         }
-
+        int get_first()const {return m_first;}
+        int get_last()const {return m_last;}
     private:
         int m_first;
         int m_last;

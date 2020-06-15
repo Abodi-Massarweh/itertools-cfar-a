@@ -85,6 +85,9 @@
 		<Unit filename="/home/abodi/CLionProjects/itertools-cfar-a/Demo.cpp">
 			<Option target="itertools-cfar-a"/>
 		</Unit>
+		<Unit filename="/home/abodi/CLionProjects/itertools-cfar-a/accumulate.hpp">
+			<Option target="itertools-cfar-a"/>
+		</Unit>
 		<Unit filename="/home/abodi/CLionProjects/itertools-cfar-a/range.hpp">
 			<Option target="itertools-cfar-a"/>
 		</Unit>
