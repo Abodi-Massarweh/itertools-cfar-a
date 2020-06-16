@@ -11,239 +11,239 @@
 using namespace std;
 using namespace itertools;
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
 }
 TEST_CASE("testing accumulate for range semi-container"){
-    size_t current = 1;
+    size_t current = 255, to_mins = 254;
     for(int i : accumulate(range(255,690))){
-                CHECK(i == current*(current+1)/2);
+                CHECK(i == current*(current+1)/2 - to_mins*(to_mins+1)/2);
         ++current;
     }
 }
 
 TEST_CASE("testing range"){
-    size_t current = 0;
+    size_t current = 100;
     for(int itr : range(100,137)){
                 CHECK(itr == current++);
     }
