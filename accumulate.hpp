@@ -22,8 +22,8 @@ namespace itertools {
         FUNC m_function;
     public:
         class iterator;
-        iterator begin() { return iterator(this->m_container.begin(),m_function); }
-        iterator end() { return iterator(this->m_container.end(),m_function); }
+        iterator begin() { return iterator(this->m_container.begin(), this->m_container.end(), m_function); }
+        iterator end() { return iterator(this->m_container.end(), this->m_container.end(), m_function); }
         Accumulate(const CONT &container, FUNC functor) : m_container(container), m_function(functor) {}
         Accumulate(const range container) : m_container(container), m_function(FUNC()) {}
         CONT& get_container(){return m_container;}
@@ -33,9 +33,10 @@ namespace itertools {
         {
         public:
             typename CONT::iterator current;
+            typename CONT::iterator end;
             TYPE sum;
             FUNC m_functor;
-             iterator(const typename CONT::iterator& it,FUNC other_functor):current(it),m_functor(other_functor),sum(*current){}
+             iterator(const typename CONT::iterator& it, const typename CONT::iterator& end, FUNC other_functor):current(it),end(end),m_functor(other_functor),sum(*current){}
             //iterator(const typename CONT::iterator& it):current(it),m_functor(it.m_functor),sum(*current){}
             TYPE operator*()
             {
@@ -45,7 +46,8 @@ namespace itertools {
             {
                 ++current; ///legal
                 //sum+=*current; //old
-                sum=m_functor(sum,*current);
+                if(current != end)
+                    sum=m_functor(sum,*current);
                 return *this;
             }
             bool operator !=(const iterator& other){return current!=other.current; }
