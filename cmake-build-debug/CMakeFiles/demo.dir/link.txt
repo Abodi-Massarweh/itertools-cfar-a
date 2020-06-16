@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/demo.dir/Demo.cpp.o CMakeFiles/demo.dir/range.cpp.o CMakeFiles/demo.dir/accumulate.cpp.o CMakeFiles/demo.dir/filterfalse.cpp.o CMakeFiles/demo.dir/compress.cpp.o  -o demo 

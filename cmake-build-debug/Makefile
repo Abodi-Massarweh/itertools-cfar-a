@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named demo
+
+# Build rule for target.
+demo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo
+.PHONY : demo
+
+# fast build rule for target.
+demo/fast:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
+
+#=============================================================================
 # Target rules for targets named itertools-cfar-a
 
 # Build rule for target.
@@ -129,7 +142,7 @@ Demo.o: Demo.cpp.o
 
 # target to build an object file
 Demo.cpp.o:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Demo.cpp.o
 .PHONY : Demo.cpp.o
 
 Demo.i: Demo.cpp.i
@@ -138,7 +151,7 @@ Demo.i: Demo.cpp.i
 
 # target to preprocess a source file
 Demo.cpp.i:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/Demo.cpp.i
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Demo.cpp.i
 .PHONY : Demo.cpp.i
 
 Demo.s: Demo.cpp.s
@@ -147,8 +160,155 @@ Demo.s: Demo.cpp.s
 
 # target to generate assembly for a file
 Demo.cpp.s:
-	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/Demo.cpp.s
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/Demo.cpp.s
 .PHONY : Demo.cpp.s
+
+Test.o: Test.cpp.o
+
+.PHONY : Test.o
+
+# target to build an object file
+Test.cpp.o:
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/Test.cpp.o
+.PHONY : Test.cpp.o
+
+Test.i: Test.cpp.i
+
+.PHONY : Test.i
+
+# target to preprocess a source file
+Test.cpp.i:
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/Test.cpp.i
+.PHONY : Test.cpp.i
+
+Test.s: Test.cpp.s
+
+.PHONY : Test.s
+
+# target to generate assembly for a file
+Test.cpp.s:
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/Test.cpp.s
+.PHONY : Test.cpp.s
+
+accumulate.o: accumulate.cpp.o
+
+.PHONY : accumulate.o
+
+# target to build an object file
+accumulate.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/accumulate.cpp.o
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o
+.PHONY : accumulate.cpp.o
+
+accumulate.i: accumulate.cpp.i
+
+.PHONY : accumulate.i
+
+# target to preprocess a source file
+accumulate.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/accumulate.cpp.i
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.i
+.PHONY : accumulate.cpp.i
+
+accumulate.s: accumulate.cpp.s
+
+.PHONY : accumulate.s
+
+# target to generate assembly for a file
+accumulate.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/accumulate.cpp.s
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.s
+.PHONY : accumulate.cpp.s
+
+compress.o: compress.cpp.o
+
+.PHONY : compress.o
+
+# target to build an object file
+compress.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/compress.cpp.o
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/compress.cpp.o
+.PHONY : compress.cpp.o
+
+compress.i: compress.cpp.i
+
+.PHONY : compress.i
+
+# target to preprocess a source file
+compress.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/compress.cpp.i
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/compress.cpp.i
+.PHONY : compress.cpp.i
+
+compress.s: compress.cpp.s
+
+.PHONY : compress.s
+
+# target to generate assembly for a file
+compress.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/compress.cpp.s
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/compress.cpp.s
+.PHONY : compress.cpp.s
+
+filterfalse.o: filterfalse.cpp.o
+
+.PHONY : filterfalse.o
+
+# target to build an object file
+filterfalse.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/filterfalse.cpp.o
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o
+.PHONY : filterfalse.cpp.o
+
+filterfalse.i: filterfalse.cpp.i
+
+.PHONY : filterfalse.i
+
+# target to preprocess a source file
+filterfalse.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/filterfalse.cpp.i
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.i
+.PHONY : filterfalse.cpp.i
+
+filterfalse.s: filterfalse.cpp.s
+
+.PHONY : filterfalse.s
+
+# target to generate assembly for a file
+filterfalse.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/filterfalse.cpp.s
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.s
+.PHONY : filterfalse.cpp.s
+
+range.o: range.cpp.o
+
+.PHONY : range.o
+
+# target to build an object file
+range.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/range.cpp.o
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/range.cpp.o
+.PHONY : range.cpp.o
+
+range.i: range.cpp.i
+
+.PHONY : range.i
+
+# target to preprocess a source file
+range.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/range.cpp.i
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/range.cpp.i
+.PHONY : range.cpp.i
+
+range.s: range.cpp.s
+
+.PHONY : range.s
+
+# target to generate assembly for a file
+range.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/range.cpp.s
+	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/range.cpp.s
+.PHONY : range.cpp.s
 
 # Help Target
 help:
@@ -158,10 +318,26 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... demo"
 	@echo "... itertools-cfar-a"
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
+	@echo "... Test.o"
+	@echo "... Test.i"
+	@echo "... Test.s"
+	@echo "... accumulate.o"
+	@echo "... accumulate.i"
+	@echo "... accumulate.s"
+	@echo "... compress.o"
+	@echo "... compress.i"
+	@echo "... compress.s"
+	@echo "... filterfalse.o"
+	@echo "... filterfalse.i"
+	@echo "... filterfalse.s"
+	@echo "... range.o"
+	@echo "... range.i"
+	@echo "... range.s"
 .PHONY : help
 
 

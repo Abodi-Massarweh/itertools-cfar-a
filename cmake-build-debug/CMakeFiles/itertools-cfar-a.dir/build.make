@@ -57,30 +57,90 @@ include CMakeFiles/itertools-cfar-a.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/itertools-cfar-a.dir/flags.make
 
-CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o: CMakeFiles/itertools-cfar-a.dir/flags.make
-CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o: ../Demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o -c /home/abodi/CLionProjects/itertools-cfar-a/Demo.cpp
+CMakeFiles/itertools-cfar-a.dir/Test.cpp.o: CMakeFiles/itertools-cfar-a.dir/flags.make
+CMakeFiles/itertools-cfar-a.dir/Test.cpp.o: ../Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/itertools-cfar-a.dir/Test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/itertools-cfar-a.dir/Test.cpp.o -c /home/abodi/CLionProjects/itertools-cfar-a/Test.cpp
 
-CMakeFiles/itertools-cfar-a.dir/Demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/itertools-cfar-a.dir/Demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abodi/CLionProjects/itertools-cfar-a/Demo.cpp > CMakeFiles/itertools-cfar-a.dir/Demo.cpp.i
+CMakeFiles/itertools-cfar-a.dir/Test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/itertools-cfar-a.dir/Test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abodi/CLionProjects/itertools-cfar-a/Test.cpp > CMakeFiles/itertools-cfar-a.dir/Test.cpp.i
 
-CMakeFiles/itertools-cfar-a.dir/Demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/itertools-cfar-a.dir/Demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abodi/CLionProjects/itertools-cfar-a/Demo.cpp -o CMakeFiles/itertools-cfar-a.dir/Demo.cpp.s
+CMakeFiles/itertools-cfar-a.dir/Test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/itertools-cfar-a.dir/Test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abodi/CLionProjects/itertools-cfar-a/Test.cpp -o CMakeFiles/itertools-cfar-a.dir/Test.cpp.s
+
+CMakeFiles/itertools-cfar-a.dir/range.cpp.o: CMakeFiles/itertools-cfar-a.dir/flags.make
+CMakeFiles/itertools-cfar-a.dir/range.cpp.o: ../range.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/itertools-cfar-a.dir/range.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/itertools-cfar-a.dir/range.cpp.o -c /home/abodi/CLionProjects/itertools-cfar-a/range.cpp
+
+CMakeFiles/itertools-cfar-a.dir/range.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/itertools-cfar-a.dir/range.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abodi/CLionProjects/itertools-cfar-a/range.cpp > CMakeFiles/itertools-cfar-a.dir/range.cpp.i
+
+CMakeFiles/itertools-cfar-a.dir/range.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/itertools-cfar-a.dir/range.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abodi/CLionProjects/itertools-cfar-a/range.cpp -o CMakeFiles/itertools-cfar-a.dir/range.cpp.s
+
+CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o: CMakeFiles/itertools-cfar-a.dir/flags.make
+CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o: ../accumulate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o -c /home/abodi/CLionProjects/itertools-cfar-a/accumulate.cpp
+
+CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abodi/CLionProjects/itertools-cfar-a/accumulate.cpp > CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.i
+
+CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abodi/CLionProjects/itertools-cfar-a/accumulate.cpp -o CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.s
+
+CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o: CMakeFiles/itertools-cfar-a.dir/flags.make
+CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o: ../filterfalse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o -c /home/abodi/CLionProjects/itertools-cfar-a/filterfalse.cpp
+
+CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abodi/CLionProjects/itertools-cfar-a/filterfalse.cpp > CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.i
+
+CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abodi/CLionProjects/itertools-cfar-a/filterfalse.cpp -o CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.s
+
+CMakeFiles/itertools-cfar-a.dir/compress.cpp.o: CMakeFiles/itertools-cfar-a.dir/flags.make
+CMakeFiles/itertools-cfar-a.dir/compress.cpp.o: ../compress.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/itertools-cfar-a.dir/compress.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/itertools-cfar-a.dir/compress.cpp.o -c /home/abodi/CLionProjects/itertools-cfar-a/compress.cpp
+
+CMakeFiles/itertools-cfar-a.dir/compress.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/itertools-cfar-a.dir/compress.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abodi/CLionProjects/itertools-cfar-a/compress.cpp > CMakeFiles/itertools-cfar-a.dir/compress.cpp.i
+
+CMakeFiles/itertools-cfar-a.dir/compress.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/itertools-cfar-a.dir/compress.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abodi/CLionProjects/itertools-cfar-a/compress.cpp -o CMakeFiles/itertools-cfar-a.dir/compress.cpp.s
 
 # Object files for target itertools-cfar-a
 itertools__cfar__a_OBJECTS = \
-"CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o"
+"CMakeFiles/itertools-cfar-a.dir/Test.cpp.o" \
+"CMakeFiles/itertools-cfar-a.dir/range.cpp.o" \
+"CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o" \
+"CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o" \
+"CMakeFiles/itertools-cfar-a.dir/compress.cpp.o"
 
 # External object files for target itertools-cfar-a
 itertools__cfar__a_EXTERNAL_OBJECTS =
 
-itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o
+itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/Test.cpp.o
+itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/range.cpp.o
+itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o
+itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o
+itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/compress.cpp.o
 itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/build.make
 itertools-cfar-a: CMakeFiles/itertools-cfar-a.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable itertools-cfar-a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable itertools-cfar-a"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/itertools-cfar-a.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

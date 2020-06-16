@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/demo.dir/all
 all: CMakeFiles/itertools-cfar-a.dir/all
 
 .PHONY : all
@@ -63,9 +64,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/demo.dir/clean
 clean: CMakeFiles/itertools-cfar-a.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/demo.dir
+
+# All Build rule for target.
+CMakeFiles/demo.dir/all:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/depend
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target demo"
+.PHONY : CMakeFiles/demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/demo.dir/rule
+
+# Convenience name for target.
+demo: CMakeFiles/demo.dir/rule
+
+.PHONY : demo
+
+# clean rule for target.
+CMakeFiles/demo.dir/clean:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/clean
+.PHONY : CMakeFiles/demo.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/itertools-cfar-a.dir
@@ -74,12 +103,12 @@ clean: CMakeFiles/itertools-cfar-a.dir/clean
 CMakeFiles/itertools-cfar-a.dir/all:
 	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/depend
 	$(MAKE) -f CMakeFiles/itertools-cfar-a.dir/build.make CMakeFiles/itertools-cfar-a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target itertools-cfar-a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target itertools-cfar-a"
 .PHONY : CMakeFiles/itertools-cfar-a.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/itertools-cfar-a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/itertools-cfar-a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/abodi/CLionProjects/itertools-cfar-a/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/itertools-cfar-a.dir/rule

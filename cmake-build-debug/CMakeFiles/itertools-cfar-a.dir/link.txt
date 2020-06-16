@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/itertools-cfar-a.dir/Demo.cpp.o  -o itertools-cfar-a 
+/usr/bin/c++  -g   CMakeFiles/itertools-cfar-a.dir/Test.cpp.o CMakeFiles/itertools-cfar-a.dir/range.cpp.o CMakeFiles/itertools-cfar-a.dir/accumulate.cpp.o CMakeFiles/itertools-cfar-a.dir/filterfalse.cpp.o CMakeFiles/itertools-cfar-a.dir/compress.cpp.o  -o itertools-cfar-a 
